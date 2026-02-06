@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import PromptInput from './components/PromptInput';
 import PromptDisplay from './components/PromptDisplay';
 import ImageResult from './components/ImageResult';
@@ -77,6 +78,8 @@ function App() {
       <footer style={{ marginTop: '4rem', textAlign: 'center', color: 'var(--glass-border)', fontSize: '0.8rem' }}>
         POWERED BY GEMINI 3 PRO ARCHITECTURE
       </footer>
+      
+      <SpeedInsights />
     </div>
   )
 }
